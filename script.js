@@ -10,3 +10,6 @@ h4Element.textContent = 'Additional Notes';
 // Step 3: Append the h4 element to the document body (or any other desired parent element)
 document.body.appendChild(h4Element).style.border = "2px solid black".color = "yellow";
 
+let h5Element = document.createElement('h5');
+h5Element.textContent = 'Additional Header';
+document.body.appendChild(h5Element)
