@@ -13,3 +13,12 @@ document.body.appendChild(h4Element).style.border = "2px solid black".color = "y
 let h5Element = document.createElement('h5');
 h5Element.textContent = 'Additional Header';
 document.body.appendChild(h5Element)
+
+let h6Element = document.createElement("h6");
+h6Element.textContent = "I want to be deleted after all";
+document.body.appendChild(h6Element).style.backgroundColor = "Blue";
+
+let elementToDelete = document.getElementById("delete");
+
+elementToDelete.remove();
+
