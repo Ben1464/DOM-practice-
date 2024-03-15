@@ -4,7 +4,8 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementsByClassName("introduction")[0].style.color = "red";
     document.getElementsByClassName("introduction")[0].style.backgroundColor = "green";
     document.getElementsByClassName("body")[0].style.backgroundColor = "yellow";
-    document.getElementById("container").style.border = "2px solid black";
+    document.getElementById("container").style.backgroundColor = "green";
+    document.getElementById("btn").style.backgroundColor = "yellow";
 
     // Adding elements using DOM
     let h4Element = document.createElement('h4');
@@ -23,15 +24,26 @@ document.addEventListener("DOMContentLoaded", function() {
     document.body.appendChild(h6Element);
 
     // Removing an element using its ID
-    let elementToDelete = document.getElementById("delete");
-    elementToDelete.remove();
+   
 
     // Adding event listener to the button
     let button = document.getElementById('btn');
-    console.log("Button found:", button); // Check if button exists
+   
     function handleClick() {
-        console.log("Button clicked");
-        alert("It's working all fine");
+   alert("It's working all fine");
     }
     button.addEventListener('click', handleClick);
+
+    const button2 = document.getElementById('btn2');
+    function hoover() {
+        alert('I have been hovered over');
+      }
+    button2.addEventListener('mouseover', hoover);
 });
+
+let newElement1 = document.createElement("div1");
+newElement1.textContent = "This is a new div element";
+newElement1.style.color = "red";
+document.body.appendChild(newElement1);
+
+
